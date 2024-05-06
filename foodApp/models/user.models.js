@@ -143,15 +143,5 @@ userSchema.methods.resetPasswordHandler=function(password,confirmPassword){
 const User = mongoose.model("User", userSchema);
  
 
-// ;(async function createUser() {
-//   let user = {
-//     name: "Jhonny sing",
-//     email: "jnon@300",
-//     password: "jhon45",
-//   };
-
-//   let data = await User.create(user);
-//   console.log(data);
-// })();
 
 module.exports=User
