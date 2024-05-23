@@ -116,7 +116,7 @@ module.exports.protectRoute=async function protectRoute(req, res, next) {
         const user = await User.findById(payload.payload);
         req.role = user.role;
         req.id = user.id;
-        console.log(`$role is {req.role} and user id is${req.id}`);
+        console.log(`role is ${req.role} and user id is${req.id}`);
         // res.cookie("ROLE",req.role,{httpOnly:true})
         next()
          
